@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "nofireoverlaymod",
+  "version": "${version}",
+  "name": "NoFireOverlayMod",
+  "description": "Removes fog rendering in the game",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.dev.nofireoverlaymod.NoFireOverlayMod"
+    ],
+    "main": [
+      "org.dev.nofireoverlaymod.NoFireOverlayMod"
+    ]
+  },
+  "mixins": [
+    "nofireoverlaymod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
